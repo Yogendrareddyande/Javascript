@@ -9,6 +9,8 @@
     // It is a interpreted language
     // // It is a dynamically typed language
 
+    
+
     // Js is high level programming and interpreted language used for creating interactive websites and also helps in adding functionalities.
 
 
