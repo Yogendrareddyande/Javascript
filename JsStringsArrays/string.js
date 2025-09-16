@@ -85,3 +85,9 @@ console.log(sampleText.toUpperCase());
 const age = 30;
 const message = `My name is ${firstName} ${lastName} and I am ${age} years old.`;
 console.log(message);
+
+// Escape Sequences :
+const multiLineString = "This is line 1.\nThis is line 2.\nThis is line 3.";
+console.log(multiLineString);
+const quoteString = 'He said, "It\'s a beautiful day!"';
+console.log(quoteString);
