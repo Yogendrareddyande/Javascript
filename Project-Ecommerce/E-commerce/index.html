@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <h1>Ecommerce</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn"><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+                <button class="btn"><i class="fa-solid fa-user-plus"></i>Register</button>
+                <button class="btn"><i class="fa-solid fa-cart-shopping"></i>Cart (0)</button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="../assests/main.png.jpg" alt="New Season Arrivals">
+        <div class="hero-text">
+            <h2>New Season Arrivals</h2>
+            <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+        </div>
+    </section>
+    <main>
+        <section class="products-section">
+            <h2>Latest Products</h2>
+            <div class="container"></div>
+            <div class="product-filters">
+                <button>All</button>
+                <button>Men's Clothing</button>
+                <button>Women's Clothing</button>
+                <button>Jewelery</button>
+                <button>Electronics</button>
+            </div>
+            <div class="product-grid">
+
+
+            </div>
+        </section>
+    </main>
+    <!-- Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close" id="closeLogin">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="Email">Email</label>
+      <input type="email" placeholder="Email" required>
+      <label for="Password">Password</label>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <span id="showRegister">Register</span></p>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal" id="registerModal">
+  <div class="modal-content">
+    <span class="close" id="closeRegister">&times;</span>
+    <h2>Register</h2>
+    <form id="registerForm">
+        <label for="Name">Name</label>
+      <input type="text" placeholder="Full Name" required>
+        <label for="Email">Email</label>
+      <input type="email" placeholder="Email" required>
+        <label for="Password">Password</label>
+      <input type="password" placeholder="Password" required>
+      <p>Already you have an account?</p>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Cart Modal -->
+<div class="modal" id="cartModal">
+  <div class="modal-content cart-modal-content">
+    <span id="closeCart" class="close">&times;</span>
+    <h2>Cart</h2>
+    <hr>
+    <div class="cart-flex">
+      <div class="cart-items-section">
+        <h3>Item List</h3>
+        <div id="cartItems"></div>
+      </div>
+      <div class="cart-summary-section">
+        <h3>Order Summary</h3>
+        <div id="cartSummary"></div>
+        <button id="checkoutBtn" class="btn checkout-btn">Go to checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer  class="footer">
+        <p>Made with<i class="fa-solid fa-heart"></i> by Yogi-AchiversIt </p>
+    </footer>
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
